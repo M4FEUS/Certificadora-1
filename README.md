@@ -4,6 +4,9 @@
 
 O **Bons Fluidos** é um projeto social desenvolvido para combater a pobreza menstrual no ambiente universitário da UTFPR-CP (Universidade Tecnológica Federal do Paraná - Campus Cornélio Procópio). O projeto nasceu da necessidade de apoiar estudantes que enfrentam dificuldades para adquirir produtos de higiene menstrual básicos.
 
+## Link no GitHub Pages
+https://m4feus.github.io/Certificadora-1/
+
 ## 🎯 Missão
 
 Nossa missão é **tripla**:
