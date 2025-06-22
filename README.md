@@ -55,7 +55,6 @@ Nossa missão é **tripla**:
 ## 📂 Estrutura do Projeto
 
 ```
-Bons-fluidos/
 ├── about.html
 ├── admin.html
 ├── agenda.html
@@ -63,6 +62,8 @@ Bons-fluidos/
 ├── doacao.html
 ├── index.html
 ├── voluntarios.html
+├── LICENSE
+├── README.md
 ├── assets/
 │   ├── css/
 │   │   ├── about.css
