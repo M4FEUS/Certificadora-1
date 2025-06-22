@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bons Fluidos - UTFPR-CP</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div>
+                    <h1>Bons Fluidos</h1>
+                    <span>UTFPR-CP | Combate à pobreza menstrual</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link" data-section="home">Início</a></li>
+                    <li><a href="about.html" class="nav-link" data-section="about">Sobre</a></li>
+                    <li><a href="agenda.html" class="nav-link" data-section="events">Agenda</a></li>
+                    <li><a href="doacao.html" class="nav-link" data-section="donations">Doações</a></li>
+                    <li><a href="voluntarios.html" class="nav-link" data-section="volunteers">Voluntários</a></li>
+                    <li><a href="beneficiarias.html" class="nav-link" data-section="beneficiaries">Beneficiárias</a></li>
+                    <li id="admin-nav" style="display: none;"><a href="admin.html" class="nav-link admin-link">Painel Admin</a></li>
+                    <li><button id="login-btn" class="login-btn">Login</button></li>
+                    <li id="logout-nav" style="display: none;"><button id="logout-btn" class="logout-btn">Logout</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Home -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="container">
+                    <h2>Combate à pobreza menstrual na UTFPR-CP</h2>
+                    <p>O projeto Bons Fluidos tem como objetivo conscientizar sobre a pobreza menstrual e fornecer apoio a meninas em situação de vulnerabilidade em nossa comunidade acadêmica.</p>
+                    <a href="doacao.html" class="btn nav-link" data-section="donations">Faça uma doação</a>
+                    <a href="voluntarios.html" class="btn btn-outline nav-link" data-section="volunteers">Seja voluntário</a>
+                </div>
+            </div>
+
+            <div class="about">
+                <div class="container">
+                    <h2 class="section-title">Nossa Missão</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>O projeto Bons Fluidos nasceu da necessidade de combater a pobreza menstrual dentro do ambiente universitário, onde muitas estudantes enfrentam dificuldades para adquirir produtos de higiene menstrual básicos.</p>
+                            <p>Nossa missão é tripla: conscientizar sobre o problema, fornecer produtos menstruais gratuitamente para quem precisa e promover debates sobre saúde menstrual e políticas públicas.</p>
+                            <p>Atuamos através de doações, palestras educativas e parcerias com outros projetos sociais dentro e fora da UTFPR.</p>
+                        </div>
+                        <div class="about-image" style="display: flex; justify-content: center; align-items: center; margin-top: 32px;">
+                            <img src="assets/img/imagem projeto.png" alt="Imagem do Projeto Bons Fluidos" style="max-width: 400px; width: 100%; height: auto; object-fit: contain; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="container">
+                    <h2 class="section-title">Como Ajudamos</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">📦</div>
+                            <h3>Distribuição de Kits</h3>
+                            <p>Fornecemos kits menstruais completos contendo absorventes, coletores menstruais e materiais informativos.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎤</div>
+                            <h3>Palestras Educativas</h3>
+                            <p>Realizamos eventos periódicos para discutir saúde menstrual, direitos e políticas públicas.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🤝</div>
+                            <h3>Apoio Psicológico</h3>
+                            <p>Oferecemos acompanhamento psicológico para ajudar a lidar com os aspectos emocionais da pobreza menstrual.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Bons Fluidos</h3>
+                    <p>Projeto de extensão da UTFPR-CP dedicado ao combate da pobreza menstrual e promoção da saúde feminina.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Instagram">ig</a>
+                        <a href="#" title="Twitter">t</a>
+                        <a href="#" title="E-mail">@</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#" class="nav-link" data-section="home">Início</a></li>
+                        <li><a href="#" class="nav-link" data-section="about">Sobre</a></li>
+                        <li><a href="#" class="nav-link" data-section="events">Agenda</a></li>
+                        <li><a href="#" class="nav-link" data-section="donations">Doações</a></li>
+                        <li><a href="#" class="nav-link" data-section="volunteers">Voluntários</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>UTFPR - Campus Cornélio Procópio</li>
+                        <li>Av. Alberto Carazzai, 1640</li>
+                        <li>Cornélio Procópio - PR</li>
+                        <li>bonsfluidos@utfpr.edu.br</li>
+                        <li>(43) 3520-0000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Login -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login Administrativo</h3>
+                <span class="close-modal" id="close-login-modal">&times;</span>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn">Entrar</button>
+                    <button type="button" class="btn btn-outline close-modal">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

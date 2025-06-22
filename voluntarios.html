@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css"> 
+    <link rel="stylesheet" href="assets/css/voluntarios.css">
+        
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div>
+                    <h1>Bons Fluidos</h1>
+                    <span>UTFPR-CP | Combate à pobreza menstrual</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-section="home">Início</a></li>
+                    <li><a href="about.html" class="nav-link" data-section="about">Sobre</a></li>
+                    <li><a href="agenda.html" class="nav-link" data-section="events">Agenda</a></li>
+                    <li><a href="doacao.html" class="nav-link" data-section="donations">Doações</a></li>
+                    <li><a href="voluntarios.html" class="nav-link" data-section="volunteers">Voluntários</a></li>
+                    <li><a href="beneficiarias.html" class="nav-link" data-section="beneficiaries">Beneficiárias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="volunteers" class="section">
+        <div class="container">
+            <h2 class="section-title">Seja um Voluntário</h2>
+            
+            <div class="form-container">
+                <h3>Se torne um Voluntário</h3>
+                <form id="volunteer-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="volunteer-name">Nome Completo</label>
+                            <input type="text" id="volunteer-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="volunteer-email">Email</label>
+                            <input type="email" id="volunteer-email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="volunteer-phone">Telefone</label>
+                            <input type="tel" id="volunteer-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="volunteer-course">Curso/Área</label>
+                            <input type="text" id="volunteer-course" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="volunteer-skills">Habilidades/Interesses</label>
+                        <textarea id="volunteer-skills" placeholder="Descreva suas habilidades, áreas de interesse ou como gostaria de contribuir"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="volunteer-availability">Disponibilidade</label>
+                        <select id="volunteer-availability" multiple>
+                            <option value="manha">Manhã</option>
+                            <option value="tarde">Tarde</option>
+                            <option value="noite">Noite</option>
+                            <option value="fds">Finais de semana</option>
+                            <option value="eventos">Apenas para eventos</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn">Enviar Voluntariado</button>
+                </form>
+            </div>
+            
+            
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Bons Fluidos</h3>
+                    <p>Projeto de extensão da UTFPR-CP dedicado ao combate da pobreza menstrual e promoção da saúde feminina.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Instagram">ig</a>
+                        <a href="#" title="Twitter">t</a>
+                        <a href="#" title="E-mail">@</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html" class="nav-link" data-section="home">Início</a></li>
+                        <li><a href="#" class="nav-link" data-section="about">Sobre</a></li>
+                        <li><a href="#" class="nav-link" data-section="events">Agenda</a></li>
+                        <li><a href="#" class="nav-link" data-section="donations">Doações</a></li>
+                        <li><a href="#" class="nav-link" data-section="volunteers">Voluntários</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>UTFPR - Campus Cornélio Procópio</li>
+                        <li>Av. Alberto Carazzai, 1640</li>
+                        <li>Cornélio Procópio - PR</li>
+                        <li>bonsfluidos@utfpr.edu.br</li>
+                        <li>(43) 3520-0000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div>
+                    <h1>Bons Fluidos</h1>
+                    <span>UTFPR-CP | Combate à pobreza menstrual</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-section="home">Início</a></li>
+                    <li><a href="about.html" class="nav-link" data-section="about">Sobre</a></li>
+                    <li><a href="agenda.html" class="nav-link" data-section="events">Agenda</a></li>
+                    <li><a href="doacao.html" class="nav-link" data-section="donations">Doações</a></li>
+                    <li><a href="voluntarios.html" class="nav-link" data-section="volunteers">Voluntários</a></li>
+                    <li><a href="beneficiarias.html" class="nav-link" data-section="beneficiaries">Beneficiárias</a></li>
+                    <li id="admin-nav" style="display: none;"><a href="admin.html" class="nav-link admin-link">Painel Admin</a></li>
+                    <li><button id="login-btn" class="login-btn">Login</button></li>
+                    <li id="logout-nav" style="display: none;"><button id="logout-btn" class="logout-btn">Logout</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Modal de Login -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login Administrativo</h3>
+                <span class="close-modal" id="close-login-modal">&times;</span>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Usuário:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn">Entrar</button>
+                    <button type="button" class="btn btn-outline close-modal">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre o Projeto</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Histórico</h3>
+                    <p>O projeto Bons Fluidos foi criado em 2020 por um grupo de estudantes da UTFPR-CP que identificaram a necessidade de combater a pobreza menstrual dentro do ambiente universitário. O que começou como uma pequena iniciativa entre amigos rapidamente cresceu e se tornou um projeto institucionalizado.</p>
+                    
+                    <h3>Nossos Números</h3>
+                    <p>Desde nossa fundação, já distribuímos mais de 5.000 kits menstruais, realizamos 32 palestras educativas e atendemos mais de 300 beneficiárias diretamente. Nossa rede de voluntários conta com mais de 50 pessoas comprometidas com a causa.</p>
+                    
+                    <h3>Reconhecimento</h3>
+                    <p>Em 2022, o projeto foi reconhecido pela Pró-Reitoria de Extensão da UTFPR como uma das iniciativas de maior impacto social no campus. Também recebemos o Prêmio Destaque em Ações de Saúde da Mulher concedido pela Secretaria Municipal de Saúde.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/img/sobre.png" alt="Equipe do Projeto Bons Fluidos" style="max-width: 100%; max-height: 400px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Bons Fluidos</h3>
+                    <p>Projeto de extensão da UTFPR-CP dedicado ao combate da pobreza menstrual e promoção da saúde feminina.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Instagram">ig</a>
+                        <a href="#" title="Twitter">t</a>
+                        <a href="#" title="E-mail">@</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html" class="nav-link" data-section="home">Início</a></li>
+                        <li><a href="#" class="nav-link" data-section="about">Sobre</a></li>
+                        <li><a href="#" class="nav-link" data-section="events">Agenda</a></li>
+                        <li><a href="#" class="nav-link" data-section="donations">Doações</a></li>
+                        <li><a href="#" class="nav-link" data-section="volunteers">Voluntários</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>UTFPR - Campus Cornélio Procópio</li>
+                        <li>Av. Alberto Carazzai, 1640</li>
+                        <li>Cornélio Procópio - PR</li>
+                        <li>bonsfluidos@utfpr.edu.br</li>
+                        <li>(43) 3520-0000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo - Bons Fluidos</title>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div>
+                    <h1>Bons Fluidos</h1>
+                    <span>UTFPR-CP | Combate à pobreza menstrual</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="about.html" class="nav-link">Sobre</a></li>
+                    <li><a href="agenda.html" class="nav-link">Agenda</a></li>
+                    <li><a href="doacao.html" class="nav-link">Doações</a></li>
+                    <li><a href="voluntarios.html" class="nav-link">Voluntários</a></li>
+                    <li><a href="beneficiarias.html" class="nav-link">Beneficiárias</a></li>
+                    <li><a href="admin.html" class="nav-link admin-link">Painel Admin</a></li>
+                    <li><button id="logout-btn" class="logout-btn">Logout</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="admin-section">
+        <div class="container">
+            <h2 class="admin-title">Painel Administrativo</h2>
+            
+            <div class="admin-tabs">
+                <button class="tab-btn active" data-tab="volunteers">Voluntários</button>
+                <button class="tab-btn" data-tab="donations">Doações</button>
+                <button class="tab-btn" data-tab="beneficiaries">Beneficiárias</button>
+            </div>
+
+            <!-- Tab Voluntários -->
+            <div id="volunteers-tab" class="tab-content active">
+                <div class="admin-controls">
+                    <h3>Gerenciar Voluntários</h3>
+                    <button class="add-btn" id="add-volunteer-btn">Adicionar Voluntário</button>
+                </div>
+                
+                <div class="form-container" id="volunteer-form-container" style="display: none;">
+                    <h4 id="volunteer-form-title">Adicionar Novo Voluntário</h4>
+                    <form id="volunteer-admin-form">
+                        <input type="hidden" id="volunteer-edit-id">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="volunteer-admin-name">Nome Completo</label>
+                                <input type="text" id="volunteer-admin-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="volunteer-admin-email">E-mail</label>
+                                <input type="email" id="volunteer-admin-email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="volunteer-admin-phone">Telefone</label>
+                                <input type="tel" id="volunteer-admin-phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="volunteer-admin-course">Curso</label>
+                                <input type="text" id="volunteer-admin-course">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="volunteer-admin-skills">Habilidades/Experiência</label>
+                            <textarea id="volunteer-admin-skills" placeholder="Descreva as habilidades e experiências relevantes"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="volunteer-admin-availability">Disponibilidade</label>
+                            <input type="text" id="volunteer-admin-availability" placeholder="Ex: Manhã, Tarde, Fins de semana">
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="add-btn">Salvar Voluntário</button>
+                            <button type="button" class="add-btn" style="background-color: #6c757d;" id="cancel-volunteer-btn">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Telefone</th>
+                            <th>Curso</th>
+                            <th>Disponibilidade</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="volunteers-admin-table">
+                        <!-- Dados serão inseridos via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Tab Doações -->
+            <div id="donations-tab" class="tab-content">
+                <div class="admin-controls">
+                    <h3>Gerenciar Doações</h3>
+                    <button class="add-btn" id="add-donation-btn">Adicionar Doação</button>
+                </div>
+                
+                <div class="form-container" id="donation-form-container" style="display: none;">
+                    <h4 id="donation-form-title">Adicionar Nova Doação</h4>
+                    <form id="donation-admin-form">
+                        <input type="hidden" id="donation-edit-id">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="donation-admin-donor">Doador</label>
+                                <input type="text" id="donation-admin-donor" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="donation-admin-type">Tipo de Doação</label>
+                                <select id="donation-admin-type" required>
+                                    <option value="">Selecione o tipo</option>
+                                    <option value="Absorventes Descartáveis">Absorventes Descartáveis</option>
+                                    <option value="Coletores Menstruais">Coletores Menstruais</option>
+                                    <option value="Calcinhas Absorventes">Calcinhas Absorventes</option>
+                                    <option value="Dinheiro">Doação em Dinheiro</option>
+                                    <option value="Outros">Outros</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="donation-admin-quantity">Quantidade/Valor</label>
+                                <input type="text" id="donation-admin-quantity" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="donation-admin-date">Data da Doação</label>
+                                <input type="date" id="donation-admin-date" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="donation-admin-notes">Observações</label>
+                            <textarea id="donation-admin-notes" placeholder="Informações adicionais sobre a doação"></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="add-btn">Salvar Doação</button>
+                            <button type="button" class="add-btn" style="background-color: #6c757d;" id="cancel-donation-btn">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Doador</th>
+                            <th>Tipo</th>
+                            <th>Quantidade/Valor</th>
+                            <th>Data</th>
+                            <th>Observações</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="donations-admin-table">
+                        <!-- Dados serão inseridos via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Tab Beneficiárias -->
+            <div id="beneficiaries-tab" class="tab-content">
+                <div class="admin-controls">
+                    <h3>Gerenciar Beneficiárias</h3>
+                    <button class="add-btn" id="add-beneficiary-btn">Adicionar Beneficiária</button>
+                </div>
+                
+                <div class="form-container" id="beneficiary-form-container" style="display: none;">
+                    <h4 id="beneficiary-form-title">Adicionar Nova Beneficiária</h4>
+                    <form id="beneficiary-admin-form">
+                        <input type="hidden" id="beneficiary-edit-id">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="beneficiary-admin-name">Nome Completo</label>
+                                <input type="text" id="beneficiary-admin-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="beneficiary-admin-id">Matrícula/Identificação</label>
+                                <input type="text" id="beneficiary-admin-id">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="beneficiary-admin-contact">Contato</label>
+                                <input type="text" id="beneficiary-admin-contact" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="beneficiary-admin-course">Curso/Área</label>
+                                <input type="text" id="beneficiary-admin-course">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="beneficiary-admin-needs">Necessidades Específicas</label>
+                            <textarea id="beneficiary-admin-needs" placeholder="Descreva os produtos mais necessários ou qualquer informação relevante"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="beneficiary-admin-frequency">Frequência de Atendimento</label>
+                                <select id="beneficiary-admin-frequency">
+                                    <option value="mensal">Mensal</option>
+                                    <option value="bimestral">Bimestral</option>
+                                    <option value="trimestral">Trimestral</option>
+                                    <option value="pontual">Pontual</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="beneficiary-admin-last-attendance">Último Atendimento</label>
+                                <input type="date" id="beneficiary-admin-last-attendance">
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="add-btn">Salvar Beneficiária</button>
+                            <button type="button" class="add-btn" style="background-color: #6c757d;" id="cancel-beneficiary-btn">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Curso/Área</th>
+                            <th>Necessidades</th>
+                            <th>Frequência</th>
+                            <th>Último Atendimento</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="beneficiaries-admin-table">
+                        <!-- Dados serão inseridos via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Bons Fluidos</h3>
+                    <p>Projeto de extensão da UTFPR-CP dedicado ao combate da pobreza menstrual e promoção da saúde feminina.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Instagram">ig</a>
+                        <a href="#" title="Twitter">t</a>
+                        <a href="#" title="E-mail">@</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Início</a></li>
+                        <li><a href="about.html" class="nav-link">Sobre</a></li>
+                        <li><a href="agenda.html" class="nav-link">Agenda</a></li>
+                        <li><a href="doacao.html" class="nav-link">Doações</a></li>
+                        <li><a href="voluntarios.html" class="nav-link">Voluntários</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>UTFPR - Campus Cornélio Procópio</li>
+                        <li>Av. Alberto Carazzai, 1640</li>
+                        <li>Cornélio Procópio - PR</li>
+                        <li>bonsfluidos@utfpr.edu.br</li>
+                        <li>(43) 3520-0000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/admin.js"></script>
+</body>
+</html>

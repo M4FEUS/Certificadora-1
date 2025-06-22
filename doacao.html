@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/doacao.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div>
+                    <h1>Bons Fluidos</h1>
+                    <span>UTFPR-CP | Combate à pobreza menstrual</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-section="home">Início</a></li>
+                    <li><a href="about.html" class="nav-link" data-section="about">Sobre</a></li>
+                    <li><a href="agenda.html" class="nav-link" data-section="events">Agenda</a></li>
+                    <li><a href="doacao.html" class="nav-link" data-section="donations">Doações</a></li>
+                    <li><a href="voluntarios.html" class="nav-link" data-section="volunteers">Voluntários</a></li>
+                    <li><a href="beneficiarias.html" class="nav-link" data-section="beneficiaries">Beneficiárias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="donate-form" class="donation-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>Cadastrar Nova Doação</h2>
+                
+                <form id="donation-form" class="form-grid">
+                    <div class="form-group">
+                        <label for="donor-name">Nome do Doador</label>
+                        <input type="text" id="donor-name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="donor-contact">Contato (Email/Telefone)</label>
+                        <input type="text" id="donor-contact" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="donation-type">Tipo de Doação</label>
+                        <select id="donation-type" class="form-control" required>
+                            <option value="">Selecione o tipo de doação...</option>
+                            <option value="absorvente">Absorventes Descartáveis</option>
+                            <option value="coletor">Coletores Menstruais</option>
+                            <option value="calcinha">Calcinhas Absorventes</option>
+                            <option value="dinheiro">Doação em Dinheiro</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="donation-quantity">Quantidade</label>
+                        <input type="number" id="donation-quantity" class="form-control" min="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="donation-date">Data da Doação</label>
+                        <input type="date" id="donation-date" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="donation-notes">Observações</label>
+                        <textarea id="donation-notes" class="form-control" rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn pulse-animation">
+                        <i class="fas fa-paper-plane"></i> Registrar Doação
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas de Impacto -->
+    <section class="impact-section">
+        <div class="container">
+            <h2>Nosso Impacto</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number purple">1,250+</div>
+                    <div class="stat-description">Doações Recebidas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number pink">3,500+</div>
+                    <div class="stat-description">Pessoas Impactadas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number purple">15+</div>
+                    <div class="stat-description">Comunidades Atendidas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number pink">50+</div>
+                    <div class="stat-description">Voluntários</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Bons Fluidos</h3>
+                    <p>Projeto de extensão da UTFPR-CP dedicado ao combate da pobreza menstrual e promoção da saúde feminina.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Instagram">ig</a>
+                        <a href="#" title="Twitter">t</a>
+                        <a href="#" title="E-mail">@</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html" class="nav-link" data-section="home">Início</a></li>
+                        <li><a href="#" class="nav-link" data-section="about">Sobre</a></li>
+                        <li><a href="#" class="nav-link" data-section="events">Agenda</a></li>
+                        <li><a href="#" class="nav-link" data-section="donations">Doações</a></li>
+                        <li><a href="#" class="nav-link" data-section="volunteers">Voluntários</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li>UTFPR - Campus Cornélio Procópio</li>
+                        <li>Av. Alberto Carazzai, 1640</li>
+                        <li>Cornélio Procópio - PR</li>
+                        <li>bonsfluidos@utfpr.edu.br</li>
+                        <li>(43) 3520-0000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
