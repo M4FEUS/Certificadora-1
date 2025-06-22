@@ -90,19 +90,6 @@ Bons-fluidos/
 4. **Administração**: Faça login para acessar o painel de controle
 5. **Gerenciamento**: Use as abas do painel para gerenciar todos os dados
 
-## 🤝 Como Contribuir
-
-O projeto **Bons Fluidos** atua através de:
-- 💝 **Doações** de produtos de higiene menstrual
-- 🎓 **Palestras educativas** sobre saúde menstrual
-- 🤝 **Parcerias** com outros projetos sociais
-- 👥 **Voluntariado** para apoio às atividades
-
-## 📞 Contato
-
-Para mais informações sobre o projeto ou para se envolver como voluntário/doador, entre em contato através do site ou participe de nossos eventos na UTFPR-CP.
-
 ---
 
-**Desenvolvido com 💜 para combater a pobreza menstrual na UTFPR-CP**
 
