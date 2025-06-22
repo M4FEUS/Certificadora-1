@@ -50,7 +50,7 @@ Nossa missão é **tripla**:
 
 **Painel Administrativo:**
 - **Usuário**: `admin`
-- **Senha**: `bonsfluidos2024`
+- **Senha**: `admin`
 
 ## 📂 Estrutura do Projeto
 
