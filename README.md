@@ -56,18 +56,30 @@ Nossa missão é **tripla**:
 
 ```
 Bons-fluidos/
-├── index.html          # Página principal
-├── about.html           # Página sobre o projeto
-├── agenda.html          # Calendário de eventos
-├── doacao.html          # Página de doações
-├── voluntarios.html     # Cadastro de voluntários
-├── beneficiarias.html   # Cadastro de beneficiárias
-├── admin.html           # Painel administrativo
-├── script.js            # JavaScript principal
-├── admin.js             # JavaScript do painel admin
-├── header.css           # Estilos do cabeçalho
-├── agenda.css           # Estilos da agenda
-└── admin.css            # Estilos do painel admin
+├── about.html
+├── admin.html
+├── agenda.html
+├── beneficiarias.html
+├── doacao.html
+├── index.html
+├── voluntarios.html
+├── assets/
+│   ├── css/
+│   │   ├── about.css
+│   │   ├── admin.css
+│   │   ├── agenda.css
+│   │   ├── beneficioaria.css
+│   │   ├── doacao.css
+│   │   ├── footer.css
+│   │   ├── header.css
+│   │   ├── style.css
+│   │   └── voluntarios.css
+│   ├── img/
+│   │   ├── imagem projeto.png
+│   │   └── sobre.png
+│   └── js/
+│       ├── admin.js
+│       └── script.js
 ```
 
 ## 🎨 Como Usar
