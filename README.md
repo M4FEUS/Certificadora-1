@@ -36,7 +36,7 @@ Nossa missão é **tripla**:
 ## 🛠️ Tecnologias Utilizadas
 
 - **Frontend**: HTML5, CSS3, JavaScript (Vanilla)
-- **Armazenamento**: LocalStorage (sem necessidade de banco de dados)
+- **Armazenamento**: LocalStorage
 - **Design**: Responsivo e acessível
 - **Autenticação**: Sistema de login client-side
 
